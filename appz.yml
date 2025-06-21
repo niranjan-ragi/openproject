@@ -14,10 +14,11 @@ deploy:
     context: ecloudcontrol/PROD
     type: statefulset
     replicas: 1
-    ingress: none
+    #ingress: none
     port:
     - 80
     - 9102
+    - 30167
 volumes:
 - claim: openproject-assets
   mount: /appz/data/openproject  
